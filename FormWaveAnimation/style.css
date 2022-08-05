@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: steelblue;
+    color: white;
+}
+
+.container {
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.container h1 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.form-input {
+    position: relative;
+    width: 300px;
+    margin: 20px 0 40px;
+}
+
+.form-input input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-input input:focus,
+.form-input input:valid {
+    outline: 0;
+    border-bottom: 2px solid lightblue;
+}
+
+.form-input label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    cursor: text;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    color: steelblue;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: steelblue;
+    color: white;
+}
+
+.form-input label span {
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-input input:focus + label span,
+.form-input input:valid + label span {
+    color: lightblue;
+    transform: translateY(-25px);
+}
+
